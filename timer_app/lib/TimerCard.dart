@@ -19,6 +19,7 @@ class _TimerCardState extends State<TimerCard> {
   String timerbuttonLabel;
   Timer timer;
   String timeElapsed;
+  
   @override
   void initState() {
     // TODO: implement initState
@@ -63,8 +64,7 @@ class _TimerCardState extends State<TimerCard> {
       height: 150.0,
       margin: EdgeInsets.all(16.0),
       padding: EdgeInsets.all(8.0),
-      color:widget.backgroundColor,
-      child: Column(
+      child: Card(elevation:10.0 , child: Column(
         children: <Widget>[
           Text(
             widget.title,
@@ -102,7 +102,7 @@ class _TimerCardState extends State<TimerCard> {
             ],
           )
         ],
-      ),
+      ),),
     );
   }
 }
