@@ -20,10 +20,10 @@ class _TimerCardState extends State<TimerCard> {
 
   @override
   void initState() {
+    super.initState();
     timer = Timer.periodic(Duration(milliseconds: 15), callback);
     timeElapsed = " ";
     timerbuttonLabel = "START";
-    super.initState();
   }
 
   callback(Timer timer) {
